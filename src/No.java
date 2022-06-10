@@ -12,6 +12,14 @@ public class No {
 		setAnterior(null);
 		setId(0);		
 	}
+	
+	public No(Object conteudo, long id) {
+		setConteudo(conteudo);
+		setProximo(null);
+		setAnterior(null);
+		setId(0);
+	}
+
 
 	public long getId() {
 		return id;
