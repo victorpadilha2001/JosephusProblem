@@ -1,0 +1,64 @@
+import java.util.Random;
+import java.util.random.*;
+
+
+public class ListaDLC {
+	private No inicio;
+	private No fim;
+	
+	int tamanho;
+	private Random r = new Random(System.currentTimeMillis());
+	
+	
+	public ListaDLC() {
+		setInicio(null);
+		setFim(null);
+		setTamanho(0);
+	}
+
+
+	public No getInicio() {
+		return inicio;
+	}
+
+
+	public void setInicio(No inicio) {
+		this.inicio = inicio;
+	}
+
+
+	public No getFim() {
+		return fim;
+	}
+
+
+	public void setFim(No fim) {
+		this.fim = fim;
+	}
+
+
+	public int getTamanho() {
+		return tamanho;
+	}
+
+
+	public void setTamanho(int tamanho) {
+		this.tamanho = tamanho;
+	}
+	
+	public boolean estaVazia() {
+		boolean vazia = false;
+		if(getInicio()==null) {
+			vazia = true;
+		}
+		return vazia;
+	}
+	
+	public void inserirInicio(Object elem) {
+		No novo = new No(elem, r.nextLong());
+		
+		
+	}
+	
+	
+}
